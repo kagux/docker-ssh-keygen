@@ -10,7 +10,7 @@ if [ ! -f "$PRIVATE_KEY" ]; then
   chmod 700 $KEYS_PATH
   chmod 644 $PUBLIC_KEY
   chmod 600 $PRIVATE_KEY
-  chown $UID:$GID $KEYS_PATH
+  chown -R $UID:$GID $KEYS_PATH
 fi
 
 echo "========= PUBLIC KEY ============"
