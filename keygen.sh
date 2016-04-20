@@ -1,5 +1,5 @@
 #!/bin/sh
-KEYS_PATH=/root/.ssh
+KEYS_PATH=${1:-/root/.ssh}
 PRIVATE_KEY=$KEYS_PATH/id_rsa
 PUBLIC_KEY=${PRIVATE_KEY}.pub
 
